@@ -1,0 +1,13 @@
+{
+  "name": "ltw09-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio tĩnh của Trần Hữu Vọng dùng HTML, CSS, JavaScript, Bootstrap 5 và JSON.",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx --yes serve . -l ${PORT:-3000}"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
