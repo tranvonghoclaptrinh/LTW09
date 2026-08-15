@@ -1,0 +1,107 @@
+[2026-08-15T00:59:51.427Z] Starting dev server with command: pnpm run dev
+[2026-08-15T00:59:53.528Z] > LTW09@1.0.0 dev /home/ubuntu/LTW09
+[2026-08-15T00:59:53.528Z] > vite --host
+[2026-08-15T00:59:54.015Z] VITE v7.1.9  ready in 443 ms
+[2026-08-15T00:59:54.015Z] ➜  Local:   http://localhost:3000/
+[2026-08-15T00:59:54.015Z] ➜  Network: http://169.254.0.21:3000/
+[2026-08-15T01:01:16.774Z] 1:01:16 AM [vite] (client) page reload index.html
+[2026-08-15T01:01:40.724Z] 1:01:40 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/client/css/bootstrap.min.css.
+[2026-08-15T01:01:40.724Z] Error: An error occurred while trying to read the map file at bootstrap.min.css.map
+[2026-08-15T01:01:40.724Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/client/css/bootstrap.min.css.map'
+[2026-08-15T01:01:40.724Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:01:40.724Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:01:40.724Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:8090:65)
+[2026-08-15T01:01:40.724Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:26114:22)
+[2026-08-15T01:01:40.797Z] 1:01:40 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/client/js/bootstrap.bundle.min.js.
+[2026-08-15T01:01:40.797Z] Error: An error occurred while trying to read the map file at bootstrap.bundle.min.js.map
+[2026-08-15T01:01:40.797Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/client/js/bootstrap.bundle.min.js.map'
+[2026-08-15T01:01:40.797Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:01:40.797Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:01:40.797Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:8090:65)
+[2026-08-15T01:01:40.797Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:26114:22)
+[2026-08-15T01:02:50.626Z] 1:02:50 AM [vite] (client) page reload index.html
+[2026-08-15T01:02:50.626Z] 1:02:50 AM [vite] (client) hmr update /css/bootstrap.min.css?direct
+[2026-08-15T01:02:50.627Z] 1:02:50 AM [vite] (client) hmr update /css/style.css?direct
+[2026-08-15T01:02:50.627Z] 1:02:50 AM [vite] (client) page reload js/bootstrap.bundle.min.js
+[2026-08-15T01:02:50.627Z] 1:02:50 AM [vite] (client) page reload js/app.js
+[2026-08-15T01:02:50.918Z] 1:02:50 AM [vite] vite.config.ts changed, restarting server...
+[2026-08-15T01:02:50.928Z] 1:02:50 AM [vite] server restarted.
+[2026-08-15T01:02:50.928Z] ➜  Local:   http://localhost:5173/
+[2026-08-15T01:02:50.928Z] ➜  Network: http://169.254.0.21:5173/
+[2026-08-15T01:04:02.954Z] ELIFECYCLE  Command failed.
+[2026-08-15T01:04:02.955Z] WARN   Local package.json exists, but node_modules missing, did you mean to install?
+[2026-08-15T01:04:02.970Z] Dev server exited with code -1
+[2026-08-15T01:04:04.063Z] Starting dev server with command: pnpm run dev
+[2026-08-15T01:04:04.707Z] [ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND] No package.json (or package.yaml, or package.json5) was found in "/home/ubuntu/LTW09".
+[2026-08-15T01:04:04.731Z] Dev server exited with code 1
+[2026-08-15T01:04:45.249Z] Starting dev server with command: pnpm run dev
+[2026-08-15T01:04:45.863Z] $ vite --host
+[2026-08-15T01:04:46.168Z] VITE v7.3.6  ready in 255 ms
+[2026-08-15T01:04:46.168Z] ➜  Local:   http://localhost:5173/
+[2026-08-15T01:04:46.168Z] ➜  Network: http://169.254.0.21:5173/
+[2026-08-15T01:04:47.414Z] 1:04:47 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/css/bootstrap.min.css.
+[2026-08-15T01:04:47.414Z] Error: An error occurred while trying to read the map file at bootstrap.min.css.map
+[2026-08-15T01:04:47.414Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/css/bootstrap.min.css.map'
+[2026-08-15T01:04:47.414Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:04:47.414Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:04:47.414Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:8066:65)
+[2026-08-15T01:04:47.414Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:22717:22)
+[2026-08-15T01:04:47.452Z] 1:04:47 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/js/bootstrap.bundle.min.js.
+[2026-08-15T01:04:47.452Z] Error: An error occurred while trying to read the map file at bootstrap.bundle.min.js.map
+[2026-08-15T01:04:47.452Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/js/bootstrap.bundle.min.js.map'
+[2026-08-15T01:04:47.452Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:04:47.452Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:04:47.452Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:8066:65)
+[2026-08-15T01:04:47.452Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:22717:22)
+[2026-08-15T01:10:41.005Z] 1:10:41 AM [vite] (client) page reload index.html
+[2026-08-15T01:10:53.997Z] 1:10:53 AM [vite] (client) hmr update /css/style.css?direct
+[2026-08-15T01:11:11.462Z] 1:11:11 AM [vite] (client) page reload js/app.js
+[2026-08-15T01:11:33.275Z] [ELIFECYCLE] Command failed.
+[2026-08-15T01:11:33.284Z] Dev server exited with code -1
+[2026-08-15T01:11:34.357Z] Starting dev server with command: pnpm run dev
+[2026-08-15T01:11:34.961Z] $ vite --host
+[2026-08-15T01:11:35.231Z] VITE v7.3.6  ready in 219 ms
+[2026-08-15T01:11:35.231Z] ➜  Local:   http://localhost:5173/
+[2026-08-15T01:11:35.231Z] ➜  Network: http://169.254.0.21:5173/
+[2026-08-15T01:11:36.559Z] 1:11:36 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/css/bootstrap.min.css.
+[2026-08-15T01:11:36.559Z] Error: An error occurred while trying to read the map file at bootstrap.min.css.map
+[2026-08-15T01:11:36.559Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/css/bootstrap.min.css.map'
+[2026-08-15T01:11:36.559Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:11:36.559Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:11:36.559Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:8066:65)
+[2026-08-15T01:11:36.559Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:22717:22)
+[2026-08-15T01:11:36.570Z] 1:11:36 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/js/bootstrap.bundle.min.js.
+[2026-08-15T01:11:36.570Z] Error: An error occurred while trying to read the map file at bootstrap.bundle.min.js.map
+[2026-08-15T01:11:36.570Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/js/bootstrap.bundle.min.js.map'
+[2026-08-15T01:11:36.570Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:11:36.570Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:11:36.570Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:8066:65)
+[2026-08-15T01:11:36.570Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:22717:22)
+[2026-08-15T01:19:00.347Z] 1:19:00 AM [vite] (client) page reload index.html
+[2026-08-15T01:19:45.333Z] 1:19:45 AM [vite] (client) hmr update /css/style.css?direct
+[2026-08-15T01:20:11.700Z] 1:20:11 AM [vite] (client) page reload index.html
+[2026-08-15T01:20:26.671Z] 1:20:26 AM [vite] (client) hmr update /css/style.css?direct
+[2026-08-15T01:23:02.709Z] 1:23:02 AM [vite] (client) page reload index.html
+[2026-08-15T01:23:15.448Z] 1:23:15 AM [vite] (client) hmr update /css/style.css?direct
+[2026-08-15T01:23:41.678Z] 1:23:41 AM [vite] (client) page reload index.html
+[2026-08-15T01:28:34.940Z] 1:28:34 AM [vite] (client) page reload index.html
+[2026-08-15T01:28:44.644Z] 1:28:44 AM [vite] (client) hmr update /css/style.css?direct
+[2026-08-15T01:31:28.412Z] 1:31:28 AM [vite] vite.config.js changed, restarting server...
+[2026-08-15T01:31:28.412Z] 1:31:28 AM [vite] (client) page reload index.html
+[2026-08-15T01:31:28.425Z] 1:31:28 AM [vite] server restarted.
+[2026-08-15T01:31:35.765Z] 1:31:35 AM [vite] (client) page reload index.html
+[2026-08-15T01:31:35.766Z] 1:31:35 AM [vite] (client) page reload index.html
+[2026-08-15T01:31:48.502Z] 1:31:48 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/css/bootstrap.min.css.
+[2026-08-15T01:31:48.502Z] Error: An error occurred while trying to read the map file at bootstrap.min.css.map
+[2026-08-15T01:31:48.502Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/css/bootstrap.min.css.map'
+[2026-08-15T01:31:48.502Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:31:48.502Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:31:48.502Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:8066:65)
+[2026-08-15T01:31:48.502Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:22717:22)
+[2026-08-15T01:31:48.584Z] 1:31:48 AM [vite] (client) Failed to load source map for /home/ubuntu/LTW09/js/bootstrap.bundle.min.js.
+[2026-08-15T01:31:48.584Z] Error: An error occurred while trying to read the map file at bootstrap.bundle.min.js.map
+[2026-08-15T01:31:48.584Z] Error: ENOENT: no such file or directory, open '/home/ubuntu/LTW09/js/bootstrap.bundle.min.js.map'
+[2026-08-15T01:31:48.584Z] at async open (node:internal/fs/promises:638:25)
+[2026-08-15T01:31:48.584Z] at async Object.readFile (node:internal/fs/promises:1242:14)
+[2026-08-15T01:31:48.584Z] at async extractSourcemapFromFile (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:8066:65)
+[2026-08-15T01:31:48.584Z] at async loadAndTransform (file:///home/ubuntu/LTW09/node_modules/.pnpm/vite@7.3.6/node_modules/vite/dist/node/chunks/config.js:22717:22)
