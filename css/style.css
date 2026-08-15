@@ -105,3 +105,43 @@ a { color: inherit; }
 }
 @media (max-width: 991px) { .hero { min-height: 620px; } .hero h1 { font-size: clamp(3rem, 10vw, 5.6rem); } .hero-profile-column { align-items: flex-start; } }
 @media (max-width: 575px) { .section { padding: 4.5rem 0; } .hero-content { padding-top: 5rem; } .hero-avatar { width: 142px; border-width: 6px; } .origin-map-shell { box-shadow: 12px 12px 0 rgba(245,216,139,.92); } }
+
+/* GitHub Pages compatibility: keep editorial headings left-aligned and prevent distributed spacing. */
+.hero h1,
+.section-title {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  text-align: left !important;
+  text-justify: auto !important;
+  word-spacing: normal !important;
+  letter-spacing: -0.035em !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  white-space: normal !important;
+}
+.hero-profile-column {
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+.hero-profile-column .hero-avatar {
+  flex: 0 0 auto;
+  width: clamp(190px, 20vw, 250px) !important;
+  height: clamp(190px, 20vw, 250px) !important;
+  border: 9px solid var(--sun) !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+.hero-profile-column .hero-note {
+  width: min(100%, 250px);
+  align-self: center;
+}
+@media (max-width: 991px) {
+  .hero-profile-column { align-items: flex-start; justify-content: flex-start; padding-top: 0; }
+  .hero-profile-column .hero-avatar { width: 190px !important; height: 190px !important; }
+  .hero-profile-column .hero-note { align-self: flex-start; }
+}
+@media (max-width: 575px) {
+  .hero-profile-column .hero-avatar { width: 150px !important; height: 150px !important; border-width: 7px !important; }
+}
