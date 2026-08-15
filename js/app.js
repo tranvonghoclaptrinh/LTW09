@@ -1,0 +1,60 @@
+/* Coastal Editorial — interaction layer for the sea-and-sun portfolio. Data is intentionally local for now; replace the array with fetch('data/assignments.json') when the JSON workflow is ready. */
+
+const assignments = [
+  {
+    number: "01",
+    title: "Portfolio cá nhân",
+    description: "Trang giới thiệu bản thân được xây dựng với Bootstrap 5 và bố cục responsive.",
+    category: "Bootstrap 5",
+    link: "#"
+  },
+  {
+    number: "02",
+    title: "Đề tài quê hương",
+    description: "Khám phá Đồng Nai qua một trang web giàu hình ảnh và câu chuyện địa phương.",
+    category: "HTML / CSS",
+    link: "https://tranvonghoclaptrinh.github.io/detaiquehuong/"
+  },
+  {
+    number: "03",
+    title: "Bài tập tiếp theo",
+    description: "Khu vực chờ để cập nhật tên bài và đường dẫn mới trong quá trình học.",
+    category: "Đang cập nhật",
+    link: "#"
+  }
+];
+
+function assignmentCard(item) {
+  const external = item.link !== "#";
+  return `
+    <div class="col-md-6 col-xl-4 reveal">
+      <article class="assignment-card d-flex flex-column">
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="assignment-number">BÀI ${item.number}</span>
+          <span class="badge badge-sea rounded-0 px-2 py-1">${item.category}</span>
+        </div>
+        <h3>${item.title}</h3>
+        <p class="mb-4">${item.description}</p>
+        <a class="assignment-link mt-auto" href="${item.link}" ${external ? 'target="_blank" rel="noreferrer"' : ''}>
+          ${external ? 'Xem bài tập ↗' : 'Sẽ cập nhật →'}
+        </a>
+      </article>
+    </div>`;
+}
+
+function renderAssignments(items = assignments) {
+  const container = document.querySelector("#assignment-grid");
+  if (!container) return;
+  container.innerHTML = items.map(assignmentCard).join("");
+}
+
+// Future JSON path:
+// async function loadAssignments() {
+//   const response = await fetch('data/assignments.json');
+//   renderAssignments(await response.json());
+// }
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderAssignments();
+  document.querySelector("#current-year").textContent = new Date().getFullYear();
+});

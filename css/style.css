@@ -1,0 +1,94 @@
+/* Coastal Editorial — Deep Tide Blue #0b3c5d, warm sand #f8f3e8, sunlight #f5d88b. This file owns the visual language: editorial spacing, wave motifs, asymmetry, and accessible motion. */
+
+:root {
+  --deep-tide: #0b3c5d;
+  --ocean: #1976a8;
+  --sky: #d9edf5;
+  --sun: #f5d88b;
+  --sand: #f8f3e8;
+  --ink: #173042;
+  --muted: #657887;
+  --line: rgba(11, 60, 93, .16);
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--sand);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, .brand-name { font-family: "Fraunces", Georgia, serif; letter-spacing: -.03em; }
+a { color: inherit; }
+.navbar { background: rgba(248, 243, 232, .9); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.navbar-brand { color: var(--deep-tide); }
+.brand-mark { width: 42px; height: 42px; object-fit: contain; }
+.brand-name { font-size: 1.12rem; line-height: 1; }
+.brand-meta { display: block; font-family: "IBM Plex Sans", sans-serif; color: var(--muted); font-size: .68rem; letter-spacing: .15em; text-transform: uppercase; margin-top: .25rem; }
+.nav-link { color: var(--deep-tide) !important; font-size: .75rem; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+.nav-link:hover, .nav-link:focus { color: var(--ocean) !important; }
+
+.hero { position: relative; min-height: 690px; display: flex; align-items: center; overflow: hidden; background: var(--deep-tide); }
+.hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,60,93,.91) 0%, rgba(11,60,93,.68) 43%, rgba(11,60,93,.16) 100%), url('/manus-storage/coastal-hero_93323631.jpg') center/cover; opacity: .96; }
+.hero::after { content: ""; position: absolute; width: 38vw; height: 38vw; min-width: 320px; min-height: 320px; right: -11vw; bottom: -20vw; border: 1px solid rgba(245,216,139,.5); border-radius: 50%; box-shadow: 0 0 0 38px rgba(245,216,139,.1), 0 0 0 76px rgba(245,216,139,.06); }
+.hero-content { position: relative; z-index: 1; color: #fff; padding-top: 6rem; padding-bottom: 5rem; }
+.kicker { color: var(--sun); font-size: .74rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.hero h1 { max-width: 700px; font-size: clamp(3.5rem, 7.5vw, 7.4rem); line-height: .96; }
+.hero-lede { max-width: 560px; color: rgba(255,255,255,.8); font-size: 1.08rem; }
+.hero-note { border-left: 2px solid var(--sun); padding-left: 1rem; color: rgba(255,255,255,.78); font-size: .86rem; }
+.btn-sun { color: var(--deep-tide); background: var(--sun); border: 1px solid var(--sun); font-weight: 700; padding: .8rem 1.15rem; transition: transform .18s var(--ease-out), background .18s var(--ease-out); }
+.btn-sun:hover, .btn-sun:focus { color: var(--deep-tide); background: #ffe6a9; transform: translateY(-2px); }
+.btn-ghost { color: #fff; border: 1px solid rgba(255,255,255,.5); padding: .8rem 1.15rem; font-weight: 600; transition: background .18s var(--ease-out), transform .18s var(--ease-out); }
+.btn-ghost:hover, .btn-ghost:focus { color: #fff; background: rgba(255,255,255,.1); transform: translateY(-2px); }
+
+.section { padding: 6.5rem 0; }
+.section-label { display: flex; gap: .75rem; align-items: center; color: var(--ocean); font-size: .7rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.section-label::after { content: ""; width: 68px; height: 1px; background: var(--sun); }
+.section-title { color: var(--deep-tide); font-size: clamp(2.25rem, 4vw, 4.1rem); line-height: 1.03; }
+.section-intro { max-width: 640px; color: var(--muted); }
+.profile-panel { background: #fffdf8; border-top: 5px solid var(--sun); padding: 2rem; box-shadow: 0 18px 50px rgba(11,60,93,.09); }
+.profile-list { list-style: none; padding: 0; margin: 0; }
+.profile-list li { display: flex; justify-content: space-between; gap: 1rem; padding: .85rem 0; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.profile-list li:last-child { border-bottom: 0; }
+.profile-label { color: var(--muted); }
+.profile-value { color: var(--deep-tide); font-weight: 600; text-align: right; }
+
+.origin-section { background: var(--deep-tide); color: #fff; position: relative; overflow: hidden; }
+.origin-section::before { content: ""; position: absolute; inset: 0; background: url('/manus-storage/paper-wave-texture_68e9c589.jpg') center/cover; opacity: .1; mix-blend-mode: screen; }
+.origin-section .container { position: relative; z-index: 1; }
+.origin-section .section-title { color: #fff; }
+.origin-section .section-label { color: var(--sun); }
+.origin-copy { color: rgba(255,255,255,.76); max-width: 560px; }
+.origin-image { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; filter: saturate(.86); box-shadow: 22px 22px 0 rgba(245,216,139,.92); }
+.origin-caption { color: rgba(255,255,255,.62); font-size: .8rem; margin-top: 1.2rem; }
+
+.archive-section { background: #fffdf8; }
+.archive-heading { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; }
+.archive-tabs .nav-link { color: var(--muted) !important; border: 0; border-bottom: 2px solid transparent; padding-left: 0; padding-right: 1.5rem; }
+.archive-tabs .nav-link.active, .archive-tabs .nav-link:hover { color: var(--deep-tide) !important; border-bottom-color: var(--sun); background: transparent; }
+.assignment-card { height: 100%; border: 1px solid var(--line); border-radius: 0; background: var(--sand); padding: 1.45rem; transition: transform .22s var(--ease-out), box-shadow .22s var(--ease-out), border-color .22s var(--ease-out); }
+.assignment-card:hover { transform: translateY(-5px); border-color: var(--ocean); box-shadow: 0 16px 32px rgba(11,60,93,.1); }
+.assignment-number { color: var(--ocean); font-size: .7rem; font-weight: 700; letter-spacing: .16em; }
+.assignment-card h3 { color: var(--deep-tide); font-size: 1.55rem; margin-top: .6rem; }
+.assignment-card p { color: var(--muted); font-size: .9rem; }
+.assignment-link { color: var(--deep-tide); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+.assignment-link:hover { color: var(--ocean); }
+.badge-sea { color: var(--deep-tide); background: var(--sky); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+.footer { background: #072b43; color: rgba(255,255,255,.72); padding: 2.8rem 0; font-size: .84rem; }
+.footer strong { color: var(--sun); }
+.back-top { color: var(--sun); text-decoration: none; font-weight: 600; }
+.back-top:hover { color: #fff; }
+
+.reveal { opacity: 0; transform: translateY(14px); }
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { animation: reveal .65s var(--ease-out) forwards; }
+  .reveal:nth-child(2) { animation-delay: .08s; }
+  .reveal:nth-child(3) { animation-delay: .16s; }
+  .reveal:nth-child(4) { animation-delay: .24s; }
+  @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
+}
+@media (max-width: 991px) { .hero { min-height: 620px; } .hero h1 { font-size: clamp(3rem, 10vw, 5.6rem); } }
+@media (max-width: 575px) { .section { padding: 4.5rem 0; } .hero-content { padding-top: 5rem; } .origin-image { box-shadow: 12px 12px 0 rgba(245,216,139,.92); } }
