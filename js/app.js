@@ -48,13 +48,17 @@ function renderAssignments(items = assignments) {
   container.innerHTML = items.map(assignmentCard).join("");
 }
 
-// Future JSON path:
-// async function loadAssignments() {
-//   const response = await fetch('data/assignments.json');
-//   renderAssignments(await response.json());
-// }
+async function loadAssignments() {
+  try {
+    const response = await fetch("data/assignments.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("Không thể tải dữ liệu JSON");
+    renderAssignments(await response.json());
+  } catch (error) {
+    renderAssignments(assignments);
+  }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderAssignments();
+  loadAssignments();
   document.querySelector("#current-year").textContent = new Date().getFullYear();
 });
