@@ -34,10 +34,10 @@ a { color: inherit; }
 .hero::after { content: ""; position: absolute; width: 38vw; height: 38vw; min-width: 320px; min-height: 320px; right: -11vw; bottom: -20vw; border: 1px solid rgba(245,216,139,.5); border-radius: 50%; box-shadow: 0 0 0 38px rgba(245,216,139,.1), 0 0 0 76px rgba(245,216,139,.06); }
 .hero-content { position: relative; z-index: 1; color: #fff; padding-top: 6rem; padding-bottom: 5rem; }
 .kicker { color: var(--sun); font-size: .74rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
-.hero h1 { max-width: 700px; font-size: clamp(3.5rem, 7.5vw, 7.4rem); line-height: .96; }
+.hero h1 { max-width: 700px; min-width: 0; font-size: clamp(3.5rem, 7.5vw, 7.4rem); line-height: .96; letter-spacing: -.025em; text-align: left; word-break: normal; overflow-wrap: normal; white-space: normal; }
 .hero-lede { max-width: 560px; color: rgba(255,255,255,.8); font-size: 1.08rem; }
-.hero-profile-column { display: flex; flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-.hero-avatar { display: block; width: clamp(150px, 17vw, 220px); max-width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 20%; border-radius: 50%; border: 8px solid rgba(245,216,139,.92); outline: 1px solid rgba(255,255,255,.45); box-shadow: 0 18px 45px rgba(0,0,0,.2); }
+.hero-profile-column { display: flex; min-width: 0; flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+.hero-avatar { display: block; width: clamp(150px, 17vw, 220px) !important; max-width: 100% !important; height: auto !important; aspect-ratio: 1 / 1; object-fit: cover; object-position: center 20%; overflow: hidden; border: 8px solid rgba(245,216,139,.92) !important; border-radius: 50% !important; outline: 1px solid rgba(255,255,255,.45); box-shadow: 0 18px 45px rgba(0,0,0,.2); }
 .hero-note { border-left: 2px solid var(--sun); padding-left: 1rem; color: rgba(255,255,255,.78); font-size: .86rem; }
 .btn-sun { color: var(--deep-tide); background: var(--sun); border: 1px solid var(--sun); font-weight: 700; padding: .8rem 1.15rem; transition: transform .18s var(--ease-out), background .18s var(--ease-out); }
 .btn-sun:hover, .btn-sun:focus { color: var(--deep-tide); background: #ffe6a9; transform: translateY(-2px); }

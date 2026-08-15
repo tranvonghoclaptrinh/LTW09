@@ -1,23 +1,23 @@
 [
   {
     "number": "01",
-    "title": "Portfolio cá nhân",
-    "description": "Trang giới thiệu bản thân được xây dựng với Bootstrap 5 và bố cục responsive.",
-    "category": "Bootstrap 5",
+    "title": "Bài tập 1",
+    "description": "Nội dung tạm — chưa cập nhật.",
+    "category": "Tạm nhập",
     "link": "#"
   },
   {
     "number": "02",
-    "title": "Đề tài quê hương",
-    "description": "Khám phá Đồng Nai qua một trang web giàu hình ảnh và câu chuyện địa phương.",
-    "category": "HTML / CSS",
-    "link": "https://tranvonghoclaptrinh.github.io/detaiquehuong/"
+    "title": "Bài tập 2",
+    "description": "Nội dung tạm — chưa cập nhật.",
+    "category": "Tạm nhập",
+    "link": "#"
   },
   {
     "number": "03",
-    "title": "Bài tập tiếp theo",
-    "description": "Khu vực chờ để cập nhật tên bài và đường dẫn mới trong quá trình học.",
-    "category": "Đang cập nhật",
+    "title": "Bài tập 3",
+    "description": "Nội dung tạm — chưa cập nhật.",
+    "category": "Tạm nhập",
     "link": "#"
   }
 ]
