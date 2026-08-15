@@ -50,7 +50,7 @@ function renderAssignments(items = assignments) {
 
 async function loadAssignments() {
   try {
-    const response = await fetch("/data/assignments.json", { cache: "no-store" });
+    const response = await fetch("data/assignments.json", { cache: "no-store" });
     if (!response.ok) throw new Error("Không thể tải dữ liệu JSON");
     renderAssignments(await response.json());
   } catch (error) {

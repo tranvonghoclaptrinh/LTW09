@@ -1,0 +1,146 @@
+@model IEnumerable<LTW09.Models.Assignment>
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="vi">
+  <head>
+    <!-- Coastal Editorial — Deep Tide Blue, warm sand, sunlight yellow; editorial hierarchy with wave-inspired details. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio cá nhân của Trần Hữu Vọng, sinh viên lớp 15DHTH07." />
+    <title>Trần Hữu Vọng — Portfolio</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" aria-label="Điều hướng chính">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+<span><span class="brand-name d-block">VỌNG</span><span class="brand-meta">15DHTH07 · Portfolio</span></span>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-lg-3 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#about">Về mình</a></li>
+            <li class="nav-item"><a class="nav-link" href="#origin">Quê hương</a></li>
+            <li class="nav-item"><a class="nav-link" href="#archive">Bài tập</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="row align-items-end g-5">
+            <div class="col-lg-8">
+              <p class="kicker reveal mb-4">Xin chào, mình là Trần Hữu Vọng</p>
+              <h1 class="reveal mb-4">Gom những điều mình học, kể bằng cách của mình.</h1>
+              <p class="hero-lede reveal mb-4">Một không gian nhỏ để giới thiệu bản thân, lưu lại những bài tập đã làm và chia sẻ góc nhìn của mình về Đồng Nai.</p>
+              <div class="d-flex flex-wrap gap-3 reveal">
+                <a class="btn btn-sun rounded-0" href="#about">Đọc hồ sơ</a>
+                <a class="btn btn-ghost rounded-0" href="#archive">Xem kho bài tập</a>
+              </div>
+            </div>
+            <div class="col-lg-4 hero-profile-column">
+              <img class="hero-avatar reveal" src="/assets/avatar.webp" alt="Ảnh đại diện của Trần Hữu Vọng" />
+              <p class="hero-note reveal mb-0">Sinh viên Công nghệ thông tin<br />Lớp 15DHTH07 · Nam<br />Luôn có một playlist đang phát.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-7">
+              <p class="section-label mb-4">01 / Về mình</p>
+              <h2 class="section-title mb-4">Một hồ sơ có nhịp điệu riêng.</h2>
+              <p class="section-intro mb-4">Mình là Trần Hữu Vọng, sinh viên lớp 15DHTH07. Mình thích nghe nhạc, khám phá cách một giao diện có thể trở nên rõ ràng hơn và ghi chép lại những sản phẩm nhỏ trong quá trình học.</p>
+              <p class="section-intro mb-0">Portfolio này được làm như một cuốn sổ mở: hôm nay là những thông tin cơ bản, ngày mai có thể là nhiều bài tập, dự án và đường dẫn hơn.</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="profile-panel">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <span class="kicker" style="color: var(--ocean)">Hồ sơ nhanh</span>
+                  <span aria-hidden="true" style="font-size: 1.5rem; color: var(--sun)">〰</span>
+                </div>
+                <ul class="profile-list">
+                  <li><span class="profile-label">Họ và tên</span><span class="profile-value">Trần Hữu Vọng</span></li>
+                  <li><span class="profile-label">Lớp</span><span class="profile-value">15DHTH07</span></li>
+                  <li><span class="profile-label">Giới tính</span><span class="profile-value">Nam</span></li>
+                  <li><span class="profile-label">Sở thích</span><span class="profile-value">Nghe nhạc</span></li>
+                  <li><span class="profile-label">Quê hương</span><span class="profile-value">Đồng Nai</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="origin" class="section origin-section">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="origin-map-shell">
+                <div class="origin-map" role="img" aria-label="Bản đồ minh họa vị trí Đồng Nai"><span class="map-route route-one"></span><span class="map-route route-two"></span><span class="map-pin">●<small>Đồng Nai</small></span><span class="map-water">SÔNG ĐỒNG NAI</span></div>
+                <a class="map-label" href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/" target="_blank" rel="noreferrer">Đồng Nai Travel ↗</a>
+              </div>
+              <p class="origin-caption">Đồng Nai — nơi những mảng xanh, dòng sông và nhịp sống bình dị tạo nên một phần câu chuyện của mình.</p>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <p class="section-label mb-4">02 / Quê hương</p>
+              <h2 class="section-title mb-4">Đồng Nai, một vùng xanh trong ký ức.</h2>
+              <p class="origin-copy mb-4">Quê hương mình là Đồng Nai — một nơi có sự giao thoa giữa nhịp sống năng động và những khoảng xanh yên bình. Với mình, đó là cảm giác thân thuộc của những cung đường, dòng sông và những câu chuyện được kể rất tự nhiên.</p>
+              <a class="btn btn-sun rounded-0" href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/" target="_blank" rel="noreferrer">Mở trang quê hương ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="archive" class="section archive-section">
+        <div class="container">
+          <div class="archive-heading d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-4">
+            <div>
+              <p class="section-label mb-4">03 / Kho bài tập</p>
+              <h2 class="section-title mb-0">Những trang đã đi qua.</h2>
+            </div>
+          </div>
+          <ul class="nav archive-tabs mb-4" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" type="button">Tất cả bài tập</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" type="button">Đang cập nhật</button></li>
+          </ul>
+          <div id="assignment-grid" class="row g-4" aria-live="polite">
+                @foreach (var assignment in Model)
+                {
+                  <div class="col-md-6 col-xl-4 reveal">
+                    <article class="assignment-card d-flex flex-column">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="assignment-number">BÀI @assignment.Number</span>
+                        <span class="badge badge-sea rounded-0 px-2 py-1">@assignment.Category</span>
+                      </div>
+                      <h3>@assignment.Title</h3>
+                      <p class="mb-4">@assignment.Description</p>
+                      <a class="assignment-link mt-auto" href="@assignment.Link">Sẽ cập nhật →</a>
+                    </article>
+                  </div>
+                }
+              </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <p class="mb-0">© <span id="current-year"></span> <strong>Trần Hữu Vọng</strong> · 15DHTH07</p>
+        <a class="back-top" href="#top">Về đầu trang ↑</a>
+      </div>
+    </footer>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
