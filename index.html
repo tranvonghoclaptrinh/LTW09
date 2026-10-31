@@ -1,75 +1,151 @@
 <!doctype html>
 <html lang="vi">
   <head>
-    <!-- Coastal Editorial — Deep Tide Blue, warm sand, sunlight yellow; editorial hierarchy with wave-inspired details. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio cá nhân của Trần Hữu Vọng, sinh viên lớp 15DHTH07." />
-    <title>Trần Hữu Vọng — Portfolio</title>
+    <meta name="description" content="Portfolio cá nhân của Trần Hữu Vọng, sinh viên Công nghệ thông tin - Lớp 15DHTH07." />
+    <meta name="author" content="Trần Hữu Vọng" />
+    <title>Trần Hữu Vọng — Portfolio | 15DHTH07</title>
+
+    <!-- Google Fonts with full Vietnamese support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 & Custom Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Top Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top" aria-label="Điều hướng chính">
-      <div class="container py-2">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
-<span><span class="brand-name d-block">VỌNG</span><span class="brand-meta">15DHTH07 · Portfolio</span></span>
+      <div class="container py-1">
+        <a class="navbar-brand" href="#top">
+          <img src="assets/avatar.webp" alt="Avatar" class="brand-avatar" />
+          <span>
+            <span class="brand-name">TRẦN HỮU VỌNG</span>
+            <span class="brand-meta">15DHTH07 · CNTT</span>
+          </span>
         </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-          <ul class="navbar-nav gap-lg-3 align-items-lg-center">
+          <ul class="navbar-nav gap-lg-3 align-items-lg-center mt-3 mt-lg-0">
             <li class="nav-item"><a class="nav-link" href="#about">Về mình</a></li>
             <li class="nav-item"><a class="nav-link" href="#origin">Quê hương</a></li>
-            <li class="nav-item"><a class="nav-link" href="#archive">Bài tập</a></li>
+            <li class="nav-item"><a class="nav-link" href="#archive">Bài tập & Đồ án</a></li>
+            <li class="nav-item"><a class="nav-link nav-btn" href="#archive">Xem sản phẩm</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <main id="top">
+      <!-- Hero Section -->
       <section class="hero">
         <div class="container hero-content">
-          <div class="row align-items-end g-5">
-            <div class="col-lg-8">
-              <p class="kicker reveal mb-4">Xin chào, mình là Trần Hữu Vọng</p>
-              <h1 class="reveal mb-4">Gom những điều mình học, kể bằng cách của mình.</h1>
-              <p class="hero-lede reveal mb-4">Một không gian nhỏ để giới thiệu bản thân, lưu lại những bài tập đã làm và chia sẻ góc nhìn của mình về Đồng Nai.</p>
-              <div class="d-flex flex-wrap gap-3 reveal">
-                <a class="btn btn-sun rounded-0" href="#about">Đọc hồ sơ</a>
-                <a class="btn btn-ghost rounded-0" href="#archive">Xem kho bài tập</a>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <div class="kicker mb-3">
+                <span class="kicker-dot"></span>
+                <span>Xin chào, mình là Trần Hữu Vọng</span>
+              </div>
+              <h1 class="mb-4">Gom những điều mình học, kể bằng cách của mình.</h1>
+              <p class="hero-lede">
+                Một không gian nhỏ để giới thiệu bản thân, lưu trữ các bài tập thực hành và đồ án chuyên ngành Công nghệ thông tin tại lớp 15DHTH07.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-sun" href="#archive">
+                  <span>Khám phá bài tập & Đồ án</span>
+                  <span>↓</span>
+                </a>
+                <a class="btn btn-ghost" href="#about">
+                  <span>Xem hồ sơ cá nhân</span>
+                  <span>→</span>
+                </a>
               </div>
             </div>
-            <div class="col-lg-4 hero-profile-column">
-              <img class="hero-avatar reveal" src="assets/avatar.webp" alt="Ảnh đại diện của Trần Hữu Vọng" />
-              <p class="hero-note reveal mb-0">Sinh viên Công nghệ thông tin<br />Lớp 15DHTH07 · Nam<br />Luôn có một playlist đang phát.</p>
+            <div class="col-lg-5 hero-profile-column">
+              <div class="hero-avatar-wrapper">
+                <img class="hero-avatar" src="assets/avatar.webp" alt="Ảnh đại diện của Trần Hữu Vọng" />
+                <div class="status-badge">
+                  <span class="pulse-dot"></span>
+                  <span>Sinh viên 15DHTH07</span>
+                </div>
+              </div>
+              <div class="hero-card-meta text-start">
+                <div class="fw-bold text-white mb-1">Trần Hữu Vọng · Lớp 15DHTH07</div>
+                <div class="small text-white-50">Chuyên ngành Công nghệ thông tin · Đồng Nai</div>
+                <div class="small mt-2 pt-2 border-top border-secondary">
+                  Thích nghe nhạc, tìm hiểu lập trình web và xây dựng giao diện thân thiện người dùng.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Section 01: About / Về mình -->
       <section id="about" class="section">
         <div class="container">
           <div class="row g-5 align-items-start">
             <div class="col-lg-7">
-              <p class="section-label mb-4">01 / Về mình</p>
-              <h2 class="section-title mb-4">Một hồ sơ có nhịp điệu riêng.</h2>
-              <p class="section-intro mb-4">Mình là Trần Hữu Vọng, sinh viên lớp 15DHTH07. Mình thích nghe nhạc, khám phá cách một giao diện có thể trở nên rõ ràng hơn và ghi chép lại những sản phẩm nhỏ trong quá trình học.</p>
-              <p class="section-intro mb-0">Portfolio này được làm như một cuốn sổ mở: hôm nay là những thông tin cơ bản, ngày mai có thể là nhiều bài tập, dự án và đường dẫn hơn.</p>
+              <p class="section-label">01 / Về mình</p>
+              <h2 class="section-title">Hồ sơ cá nhân & Định hướng học tập</h2>
+              <p class="section-intro mb-4">
+                Mình là <strong>Trần Hữu Vọng</strong>, hiện là sinh viên chuyên ngành <strong>Công nghệ thông tin</strong> thuộc lớp <strong>15DHTH07</strong>. Mình đam mê học hỏi về quy trình phát triển website, từ thiết kế giao diện front-end đến triển khai các ứng dụng thực tế trên môi trường đám mây.
+              </p>
+              <p class="section-intro mb-4">
+                Trang portfolio này đóng vai trò như một kho lưu trữ trực quan giúp mình tổng hợp lại các bài tập, đồ án môn học và các sản phẩm công nghệ đã thực hiện trong quá trình học tập.
+              </p>
+              
+              <!-- Skills pills -->
+              <div class="skills-card">
+                <h6 class="fw-bold mb-3 text-uppercase small text-muted" style="letter-spacing: 0.08em;">Kỹ năng & Công nghệ đang học</h6>
+                <div class="d-flex flex-wrap">
+                  <span class="badge-skill">HTML5 & CSS3</span>
+                  <span class="badge-skill">JavaScript (ES6+)</span>
+                  <span class="badge-skill">Bootstrap 5</span>
+                  <span class="badge-skill">Lập trình Web (LTW)</span>
+                  <span class="badge-skill">Git & GitHub</span>
+                  <span class="badge-skill">Render Cloud Deploy</span>
+                  <span class="badge-skill">Responsive Web Design</span>
+                </div>
+              </div>
             </div>
+
             <div class="col-lg-5">
               <div class="profile-panel">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                  <span class="kicker" style="color: var(--ocean)">Hồ sơ nhanh</span>
-                  <span aria-hidden="true" style="font-size: 1.5rem; color: var(--sun)">〰</span>
+                <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+                  <span class="fw-bold text-uppercase small" style="color: var(--ocean); letter-spacing: 0.1em;">Thông tin sinh viên</span>
+                  <span class="badge bg-primary-subtle text-primary fw-semibold px-2 py-1 rounded">15DHTH07</span>
                 </div>
                 <ul class="profile-list">
-                  <li><span class="profile-label">Họ và tên</span><span class="profile-value">Trần Hữu Vọng</span></li>
-                  <li><span class="profile-label">Lớp</span><span class="profile-value">15DHTH07</span></li>
-                  <li><span class="profile-label">Giới tính</span><span class="profile-value">Nam</span></li>
-                  <li><span class="profile-label">Sở thích</span><span class="profile-value">Nghe nhạc</span></li>
-                  <li><span class="profile-label">Quê hương</span><span class="profile-value">Đồng Nai</span></li>
+                  <li>
+                    <span class="profile-label">Họ và tên</span>
+                    <span class="profile-value">Trần Hữu Vọng</span>
+                  </li>
+                  <li>
+                    <span class="profile-label">Lớp sinh viên</span>
+                    <span class="profile-value">15DHTH07</span>
+                  </li>
+                  <li>
+                    <span class="profile-label">Ngành đào tạo</span>
+                    <span class="profile-value">Công nghệ thông tin</span>
+                  </li>
+                  <li>
+                    <span class="profile-label">Giới tính</span>
+                    <span class="profile-value">Nam</span>
+                  </li>
+                  <li>
+                    <span class="profile-label">Quê quán</span>
+                    <span class="profile-value">Đồng Nai</span>
+                  </li>
+                  <li>
+                    <span class="profile-label">Sở thích</span>
+                    <span class="profile-value">Nghe nhạc, Lập trình web</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -77,50 +153,150 @@
         </div>
       </section>
 
+      <!-- Section 02: Quê hương -->
       <section id="origin" class="section origin-section">
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div class="origin-map-shell">
-                <div class="origin-map" role="img" aria-label="Bản đồ minh họa vị trí Đồng Nai"><span class="map-route route-one"></span><span class="map-route route-two"></span><span class="map-pin">●<small>Đồng Nai</small></span><span class="map-water">SÔNG ĐỒNG NAI</span></div>
-                <a class="map-label" href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/" target="_blank" rel="noreferrer">Đồng Nai Travel ↗</a>
+                <div class="origin-map" role="img" aria-label="Bản đồ minh họa vị trí Đồng Nai">
+                  <span class="map-route route-one"></span>
+                  <span class="map-route route-two"></span>
+                  <div class="map-pin">
+                    <span>📍</span>
+                    <span class="map-pin-label">Đồng Nai</span>
+                  </div>
+                  <span class="map-water">SÔNG ĐỒNG NAI</span>
+                </div>
+                <a class="map-overlay-btn" href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/" target="_blank" rel="noopener noreferrer">
+                  <span>Khám phá Đề tài Quê hương</span>
+                  <span>↗</span>
+                </a>
               </div>
-              <p class="origin-caption">Đồng Nai — nơi những mảng xanh, dòng sông và nhịp sống bình dị tạo nên một phần câu chuyện của mình.</p>
+              <p class="small text-white-50 mt-3 text-center text-lg-start">
+                Đồng Nai — Nơi những dòng sông, mảng xanh và nhịp sống bình dị gắn liền với những kỷ niệm quê nhà.
+              </p>
             </div>
             <div class="col-lg-6 order-lg-1">
-              <p class="section-label mb-4">02 / Quê hương</p>
-              <h2 class="section-title mb-4">Đồng Nai, một vùng xanh trong ký ức.</h2>
-              <p class="origin-copy mb-4">Quê hương mình là Đồng Nai — một nơi có sự giao thoa giữa nhịp sống năng động và những khoảng xanh yên bình. Với mình, đó là cảm giác thân thuộc của những cung đường, dòng sông và những câu chuyện được kể rất tự nhiên.</p>
-              <a class="btn btn-sun rounded-0" href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/" target="_blank" rel="noreferrer">Mở trang quê hương ↗</a>
+              <p class="section-label">02 / Quê hương</p>
+              <h2 class="section-title">Đồng Nai, một vùng xanh trong ký ức.</h2>
+              <p class="origin-copy mb-4">
+                Quê hương mình là Đồng Nai — mảnh đất năng động giao thoa giữa cảnh sắc thiên nhiên trong lành và sự phát triển không ngừng. Đó là cảm giác thân quen của những con đường rợp bóng cây, dòng sông Đồng Nai êm đềm và những con người nồng hậu.
+              </p>
+              <p class="origin-copy mb-4">
+                Mình đã thực hiện một trang web riêng giới thiệu về vùng đất và con người Đồng Nai để lưu giữ và chia sẻ những góc nhìn thân thương nhất.
+              </p>
+              <a class="btn btn-sun" href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/" target="_blank" rel="noopener noreferrer">
+                <span>Xem trang Đề tài Quê hương ↗</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Section 03: Assignments / Kho Bài tập & Đồ án (STATIC CARDS) -->
       <section id="archive" class="section archive-section">
         <div class="container">
-          <div class="archive-heading d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-4">
+          <div class="archive-heading d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3">
             <div>
-              <p class="section-label mb-4">03 / Kho bài tập</p>
-              <h2 class="section-title mb-0">Những trang đã đi qua.</h2>
+              <p class="section-label">03 / Kho bài tập & Đồ án</p>
+              <h2 class="section-title mb-1">Các sản phẩm & Đồ án đã thực hiện</h2>
+              <p class="text-muted mb-0">Các bài tập thực hành và đồ án nhóm được triển khai trực tiếp trên nền tảng Render Cloud.</p>
             </div>
           </div>
-          <ul class="nav archive-tabs mb-4" role="tablist">
-            <li class="nav-item" role="presentation"><button class="nav-link active" type="button">Tất cả bài tập</button></li>
-            <li class="nav-item" role="presentation"><button class="nav-link" type="button">Đang cập nhật</button></li>
-          </ul>
-          <div id="assignment-grid" class="row g-4" aria-live="polite"></div>
+
+          <!-- Filter Tabs -->
+          <div class="archive-tabs" role="tablist">
+            <button class="archive-tab-btn active" type="button" data-filter="all">Tất cả sản phẩm (2)</button>
+            <button class="archive-tab-btn" type="button" data-filter="thuvien">Thư viện</button>
+            <button class="archive-tab-btn" type="button" data-filter="doan">Đồ án nhóm</button>
+          </div>
+
+          <!-- STATIC ASSIGNMENT CARDS -->
+          <div id="assignment-grid" class="row g-4" aria-live="polite">
+            
+            <!-- THẺ 01: THƯ VIỆN -->
+            <div class="col-md-6 assignment-item" data-category="thuvien">
+              <article class="assignment-card">
+                <div class="card-top-meta">
+                  <span class="assignment-number">BÀI TẬP 01</span>
+                  <span class="badge-tag badge-thuvien">Thư viện trực tuyến</span>
+                </div>
+                <h3>Hệ thống Quản lý Thư viện Trực tuyến</h3>
+                <p>
+                  Website quản lý và tra cứu thư viện trực tuyến, hỗ trợ danh mục đầu sách, tra cứu tài liệu học tập, xem chi tiết ấn phẩm và hỗ trợ quản lý bạn đọc với giao diện tối ưu hóa người dùng.
+                </p>
+                <div class="card-tech-pills">
+                  <span class="tech-pill">Web Library</span>
+                  <span class="tech-pill">HTML / CSS</span>
+                  <span class="tech-pill">JavaScript</span>
+                  <span class="tech-pill">Render Cloud</span>
+                </div>
+                <div class="mt-auto pt-2">
+                  <a class="assignment-btn assignment-btn-thuvien" 
+                     href="https://thuvien-1-1vd2.onrender.com/" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     title="Truy cập ứng dụng Thư viện trên Render">
+                    <span>Truy cập Thư viện</span>
+                    <span class="btn-arrow">↗</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- THẺ 02: ĐỒ ÁN NHÓM - FLOWERS SHOP -->
+            <div class="col-md-6 assignment-item" data-category="doan">
+              <article class="assignment-card">
+                <div class="card-top-meta">
+                  <span class="assignment-number">ĐỒ ÁN 02</span>
+                  <span class="badge-tag badge-doan">Đồ án nhóm</span>
+                </div>
+                <h3>Website Cửa Hàng Hoa Tươi - Flowers Shop</h3>
+                <p>
+                  Dự án đồ án nhóm xây dựng website thương mại điện tử chuyên kinh doanh hoa tươi và quà tặng nghệ thuật. Website tích hợp danh mục sản phẩm, bộ lọc theo chủ đề và quy trình đặt hàng thuận tiện.
+                </p>
+                <div class="card-tech-pills">
+                  <span class="tech-pill">Đồ án nhóm</span>
+                  <span class="tech-pill">E-Commerce</span>
+                  <span class="tech-pill">UI/UX Design</span>
+                  <span class="tech-pill">Render Cloud</span>
+                </div>
+                <div class="mt-auto pt-2">
+                  <a class="assignment-btn assignment-btn-doan" 
+                     href="https://flowersshop-j658.onrender.com/" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     title="Truy cập Đồ án Flowers Shop trên Render">
+                    <span>Truy cập Đồ án nhóm</span>
+                    <span class="btn-arrow">↗</span>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-        <p class="mb-0">© <span id="current-year"></span> <strong>Trần Hữu Vọng</strong> · 15DHTH07</p>
-        <a class="back-top" href="#top">Về đầu trang ↑</a>
+        <div>
+          <p class="mb-1">© <span id="current-year"></span> <strong>Trần Hữu Vọng</strong> · Sinh viên Lớp 15DHTH07</p>
+          <div class="small text-white-50">Khoa Công nghệ thông tin · Portfolio bài tập & đồ án trực tuyến</div>
+        </div>
+        <div>
+          <a class="back-top" href="#top">
+            <span>Về đầu trang</span>
+            <span>↑</span>
+          </a>
+        </div>
       </div>
     </footer>
 
+    <!-- Bootstrap Bundle JS & App Script -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
   </body>

@@ -1,23 +1,18 @@
 [
   {
     "number": "01",
-    "title": "Bài tập 1",
-    "description": "Nội dung tạm — chưa cập nhật.",
-    "category": "Tạm nhập",
-    "link": "#"
+    "title": "Hệ thống Quản lý Thư viện Trực tuyến",
+    "description": "Website tra cứu và quản lý thư viện, hỗ trợ phân loại đầu sách, tìm kiếm tài liệu học tập và quản lý bạn đọc trực quan.",
+    "category": "Thư viện",
+    "link": "https://thuvien-1-1vd2.onrender.com/",
+    "tags": ["HTML/CSS", "JavaScript", "Bootstrap", "Render Cloud"]
   },
   {
     "number": "02",
-    "title": "Bài tập 2",
-    "description": "Nội dung tạm — chưa cập nhật.",
-    "category": "Tạm nhập",
-    "link": "#"
-  },
-  {
-    "number": "03",
-    "title": "Bài tập 3",
-    "description": "Nội dung tạm — chưa cập nhật.",
-    "category": "Tạm nhập",
-    "link": "#"
+    "title": "Website Cửa Hàng Hoa Tươi - Flowers Shop",
+    "description": "Dự án đồ án nhóm xây dựng website thương mại điện tử chuyên kinh doanh hoa tươi và quà tặng nghệ thuật, hỗ trợ đặt hàng trực tuyến.",
+    "category": "Đồ án nhóm",
+    "link": "https://flowersshop-j658.onrender.com/",
+    "tags": ["Đồ án nhóm", "E-Commerce", "UI/UX", "Render Cloud"]
   }
 ]
