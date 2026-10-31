@@ -115,19 +115,33 @@
           </ul>
           <div id="assignment-grid" class="row g-4" aria-live="polite">
                 @foreach (var assignment in Model)
-                {
-                  <div class="col-md-6 col-xl-4 reveal">
-                    <article class="assignment-card d-flex flex-column">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="assignment-number">BÀI @assignment.Number</span>
-                        <span class="badge badge-sea rounded-0 px-2 py-1">@assignment.Category</span>
-                      </div>
-                      <h3>@assignment.Title</h3>
-                      <p class="mb-4">@assignment.Description</p>
-                      <a class="assignment-link mt-auto" href="https://thuvien-1-1vd2.onrender.com/">truy cập →</a>
-                    </article>
-                  </div>
-                }
+{
+  <div class="col-md-6 col-xl-4 reveal">
+    <article class="assignment-card d-flex flex-column">
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="assignment-number">BÀI @assignment.Number</span>
+        <span class="badge badge-sea rounded-0 px-2 py-1">@assignment.Category</span>
+      </div>
+      <h3>@assignment.Title</h3>
+      <p class="mb-4">@assignment.Description</p>
+      
+      <!-- Chỉ gán link cho Bài số 1, các bài còn lại trỏ về # -->
+      @if (assignment.Number == 1)
+      {
+        <a class="assignment-link mt-auto" 
+           href="https://thuvien-1-1vd2.onrender.com/" 
+           target="_blank" 
+           rel="noreferrer">
+           truy cập →
+        </a>
+      }
+      else
+      {
+        <a class="assignment-link mt-auto" href="#">truy cập →</a>
+      }
+    </article>
+  </div>
+}
               </div>
         </div>
       </section>
